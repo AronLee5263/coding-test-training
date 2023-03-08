@@ -1,14 +1,10 @@
 function solution(my_string) {
-   
-    let reversedArr = ''
+    let newArr = '';
     
-    
-    for(i =my_string.length -1; i>=0; i--){
-        
-        reversedArr = reversedArr + my_string[i]
+    for(let i= my_string.length -1; i>=0; i--){
+        newArr = newArr + my_string[i];
     }
     
-    return reversedArr;
     
-    
+    return newArr;
 }
