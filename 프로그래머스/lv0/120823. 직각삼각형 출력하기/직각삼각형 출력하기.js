@@ -12,17 +12,28 @@ rl.on('line', function (line) {
     const n = Number(input[0]);
     
     let line = 1;
-    while (line <= n){
+    while(line <= n) {
         
-        let starStr = ''
         let cnt = 0
+        let star =''
         while(cnt < line){
-            starStr = starStr + '*'
-            cnt= cnt + 1
-        }        
-        console.log(starStr)
+            
+            star = star + "*"
+            cnt = cnt + 1
+        }      
+        console.log(star)
         
         line = line + 1
     }
-    
 });
+
+
+
+
+
+
+
+
+
+
+
