@@ -3,11 +3,12 @@ let input = fs.readFileSync("/dev/stdin").toString().split("\n")
 
 let n = Number(input[0])
 
-let result =""
+let answer =""
 for(let i=1; i <= n; i++){
-    let a = Number(input[i].split(" ")[0])
-    let b = Number(input[i].split(" ")[1])
-    result += a + b + "\n";
+    let data = input[i].split(" ")
+    let a = Number(data[0])
+    let b = Number(data[1])
+    answer += a + b + "\n";
 }
 
-console.log(result)
+console.log(answer)
