@@ -1,4 +1,3 @@
-
 let fs = require("fs")
 let input = fs.readFileSync("/dev/stdin").toString().split("\n")
 
@@ -8,10 +7,7 @@ let result =""
 for(let i=1; i <= n; i++){
     let a = Number(input[i].split(" ")[0])
     let b = Number(input[i].split(" ")[1])
-
-    let accumulatedValue = a + b 
-    result += accumulatedValue;
-    result += "\n"
+    result += a + b + "\n";
 }
 
 console.log(result)
